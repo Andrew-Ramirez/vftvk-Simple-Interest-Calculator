@@ -8,14 +8,14 @@ function compute() {
 }
 function updateRate() {
     var ratEval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText = ratEval;
+    document.getElementById("rate_val").innerText = ratEval+"%";
 }
 function valCheck() {
-    if(document.getElementById("principal").value <= 0) {
-        alert("Please enter a positive number for Amount")
+    if(document.getElementById("principal").value<=0) {
+        alert("Please input a positive number");
     }
     else {
-        compute()
+        compute();
     }
 }
         
